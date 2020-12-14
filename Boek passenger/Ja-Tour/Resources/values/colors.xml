@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+  <color name="splashBackground">#fff</color>
+
+  <color name="tourwhite">#fff</color>
+  <color name="tourPrimary">#1C4258</color>
+  <color name="tourAccentColor">#EE861F</color>
+  <color name="tourPrimaryDark">#102A38</color>
+  <color name="tourAccentClick">#EE861F</color>
+  <color name="tourAsh">#e2e2e2</color>
+  <color name="tourBlack">#000</color>
+</resources>
