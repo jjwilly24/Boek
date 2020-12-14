@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ja-Tours Driver</string>
+    <string name="action_settings">Settings</string>
+  <string name="click_here">Not Registered, Click to Register</string>
+  <string name="click_login">Already Registered, Click to Login</string>
+  <string name="mapkey">AIzaSyB-EoO_oq4upPp3KbO5meIKMv2WhRRDbBg</string>
+</resources>
