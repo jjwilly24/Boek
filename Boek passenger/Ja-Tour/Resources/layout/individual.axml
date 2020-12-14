@@ -1,0 +1,187 @@
+
+<android.support.design.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFA">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:fitsSystemWindows="true">
+       
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collapsing_toolbar"
+        android:background="#FAFBFA"
+        app:expandedTitleTextAppearance="@android:color/transparent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@android:color/transparent"
+        app:expandedTitleMarginStart="48dp"
+        app:titleEnabled="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#0BC9E3"
+        android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_image"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/booking6"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@android:color/white"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Luxuries bed"
+         android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="380dp"
+                    android:layout_height="80dp"
+                    app:cardElevation="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="275dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                      
+                        <LinearLayout
+                            android:paddingLeft="50dp"
+                           android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:textSize="20sp"
+                            android:textColor="#333639"/>
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30k"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="#0BC9E3"/>
+
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textSize="20sp"
+                            android:textColor="#333639"/>
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kingston"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="#0BC9E3"/>
+
+
+                    </LinearLayout>
+                          <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rating"
+                            android:textSize="20sp"
+                            android:textColor="#333639"/>
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.6"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="#0BC9E3"/>
+
+
+                    </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                    android:layout_width="380dp"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:id="@+id/toolbar"
+                    android:background="@color/colorPrimary"
+                    android:backgroundTint="#0BC9E3"
+                app:titleTextColor="@android:color/white"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"/>
+           
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+      </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewpager"
+            android:layout_marginTop="0dp"
+            android:text="Information: Room for Rent: Spacious, updated 1 bedroom, 1 bathroom apartment room in the Entertainment City of Kingston, available November 30th. Close to the nightlife with a private backyard. $30k per month, with a 15k deposit non-refundable. The building is pet-friendly with heat included. This property is managed by a landlord. Applicants are required to complete rental application. Call Trevor at 222-222-2222"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
